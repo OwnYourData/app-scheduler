@@ -1,0 +1,18 @@
+{
+        "name":"Scheduler",
+        "identifier":"eu.ownyourdata.scheduler",
+        "type":"external",
+        "description":"Dieser Dienst führt periodische Aufgaben für andere Apps durch (zB Daten sammeln, Emails versenden und empfangen).",
+        "permissions":[
+                "eu.ownyourdata.scheduler:read",
+                "eu.ownyourdata.scheduler.log:read",
+                "eu.ownyourdata.scheduler.log:write",
+                "eu.ownyourdata.scheduler.log:update",
+                "eu.ownyourdata.scheduler.log:delete",
+                "eu.ownyourdata.scheduler.status:read",
+                "eu.ownyourdata.scheduler.status:write",
+                "eu.ownyourdata.scheduler.status:update",
+                "eu.ownyourdata.scheduler.email_config:read"]
+}
+base64-encoded manifest (https://www.base64encode.org/)
+ew0KICAgICAgICAibmFtZSI6IkFwcCBWb3JsYWdlIiwNCiAgICAgICAgImlkZW50aWZpZXIiOiJldS5vd255b3VyZGF0YS50ZW1wbGF0ZSIsDQogICAgICAgICJ0eXBlIjoiZXh0ZXJuYWwiLA0KICAgICAgICAiZGVzY3JpcHRpb24iOiJlaW4gUi1UZW1wbGF0ZSBmw7xyIE9ZRCBBcHBzIiwNCiAgICAgICAgInBlcm1pc3Npb25zIjpbDQogICAgICAgICAgICAgICAgImV1Lm93bnlvdXJkYXRhLmluZm86cmVhZCIsDQogICAgICAgICAgICAgICAgImV1Lm93bnlvdXJkYXRhLmluZm86d3JpdGUiLA0KICAgICAgICAgICAgICAgICJldS5vd255b3VyZGF0YS5pbmZvOnVwZGF0ZSIsDQogICAgICAgICAgICAgICAgImV1Lm93bnlvdXJkYXRhLnRlbXBsYXRlOnJlYWQiLA0KICAgICAgICAgICAgICAgICJldS5vd255b3VyZGF0YS50ZW1wbGF0ZTp3cml0ZSIsDQogICAgICAgICAgICAgICAgImV1Lm93bnlvdXJkYXRhLnRlbXBsYXRlOnVwZGF0ZSIsDQogICAgICAgICAgICAgICAgImV1Lm93bnlvdXJkYXRhLnRlbXBsYXRlOmRlbGV0ZSIsDQogICAgICAgICAgICAgICAgImV1Lm93bnlvdXJkYXRhLnRlbXBsYXRlLmxvZzpyZWFkIiwNCiAgICAgICAgICAgICAgICAiZXUub3dueW91cmRhdGEudGVtcGxhdGUubG9nOndyaXRlIl0NCn0=
