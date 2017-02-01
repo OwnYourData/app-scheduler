@@ -78,7 +78,6 @@ r2d <- function(response){
                                                                        function(x) data.frame(x, stringsAsFactors = FALSE)))
                                                 }
                                         } else {
-                                                save(retVal, file='tmpR2D.RData')
                                                 do.call(bind_rows,
                                                         lapply(retVal,
                                                                function(x) data.frame(x, stringsAsFactors = FALSE)))
