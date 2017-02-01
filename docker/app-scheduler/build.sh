@@ -1,7 +1,7 @@
 #!/bin/bash
 
-APP="app-bank"
-APP_NAME="kontoentwicklung"
+APP="app-scheduler"
+APP_NAME="scheduler"
 
 # read commandline options
 REFRESH=false

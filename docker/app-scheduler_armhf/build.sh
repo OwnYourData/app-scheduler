@@ -1,8 +1,8 @@
 #!/bin/bash
 
-APP="app-bank_armhf"
-APP_GIT="app-bank"
-APP_NAME="kontoentwicklung"
+APP="app-scheduler_armhf"
+APP_GIT="app-scheduler"
+APP_NAME="scheduler"
 
 # read commandline options
 REFRESH=false
