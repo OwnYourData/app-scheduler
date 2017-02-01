@@ -6,14 +6,8 @@
 appSource <- function(){
         fluidRow(
                 column(12,
-                       # uiOutput('desktopUiSourceItemsRender')
-                       tabsetPanel(
-                               type='tabs',
-                               tabPanel('Tab1',
-                                        p('hello world')
-                               )
-                       )
-                )
+                       tags$strong('Apps'), br(),
+                       tableOutput('schedulerApps'))
         )
 }
 

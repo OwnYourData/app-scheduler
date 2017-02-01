@@ -10,10 +10,12 @@ appStatus <- function(){
                        # uiOutput('desktopUiStatusItemsRender')
                        uiStatusDateSelect(),
                        bsAlert('dataStatus'),
-                       tabsetPanel(type='tabs',
-                                   tabPanel('Tab1', br(),
-                                            p('hello world')
-                                   )
+                       tabsetPanel(
+                               type='tabs',
+                               tabPanel('periodische Aufgaben', br(),
+                                        DT::dataTableOutput('scheduler_tasks'),
+                                        actionButton('delTask', 'Entfernen', 
+                                                     icon('trash')))
                        )
                 )
         )

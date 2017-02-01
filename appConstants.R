@@ -5,6 +5,7 @@
 appName <- 'scheduler'
 appTitle <- 'Scheduler'
 app_id <- 'eu.ownyourdata.scheduler'
+schedulerStatusKey <- 'eu.ownyourdata.scheduler.status'
 
 # definition of data structure
 currRepoSelect <- ''
