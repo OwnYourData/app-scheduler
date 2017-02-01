@@ -32,10 +32,10 @@ observe({
                 retVal <- readItems(app, url)
                 if((nrow(retVal) > 1) | (nrow(retVal) == 0)){
                         deleteRepo(app, url)
+                        schedulerActiveStatus <- TRUE
                         item <- list(active         = schedulerActiveStatus,
                                      '_oydRepoName' = 'Scheduler Status')
                         writeItem(app, url, item)
-                        schedulerActiveStatus <- TRUE
                 }
                 if(nrow(retVal) == 1){
                         schedulerActiveStatus <- retVal$active
@@ -107,6 +107,21 @@ renderSchedulerApps <- function(data){
 output$scheduler_tasks <- DT::renderDataTable({
         data <- currData()
         renderSchedulerTasks(data)
+})
+
+output$scheduler_logs <- DT::renderDataTable({
+        data <- repoData('eu.ownyourdata.scheduler.log')
+        save(data, file='tmpLogs.RData')
+        if(nrow(data) > 0) {
+                data$zeit <- as.POSIXct(data$timestamp, origin="1970-01-01")
+                data <- data[, c('zeit', 'text')]
+                colnames(data) <- c('Zeitpunkt', 'Meldung')
+                DT::datatable(data,
+                              selection = 'none',
+                              options = list(language = list(url = '//cdn.datatables.net/plug-ins/1.10.11/i18n/German.json')))
+        } else {
+                data.frame()
+        }
 })
 
 output$schedulerApps <- renderTable({

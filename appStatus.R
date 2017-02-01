@@ -15,7 +15,9 @@ appStatus <- function(){
                                tabPanel('periodische Aufgaben', br(),
                                         DT::dataTableOutput('scheduler_tasks'),
                                         actionButton('delTask', 'Entfernen', 
-                                                     icon('trash')))
+                                                     icon('trash'))),
+                               tabPanel('Verlauf', br(),
+                                        DT::dataTableOutput('scheduler_logs'))
                        )
                 )
         )

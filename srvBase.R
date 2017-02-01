@@ -73,13 +73,14 @@ r2d <- function(response){
                                                         data.frame()
                                                 } else {
                                                         # convert list to data.frame
-                                                        do.call(bind_rows, 
-                                                                lapply(retVal, 
+                                                        do.call(bind_rows,
+                                                                lapply(retVal,
                                                                        function(x) data.frame(x, stringsAsFactors = FALSE)))
                                                 }
                                         } else {
-                                                do.call(bind_rows, 
-                                                        lapply(retVal, 
+                                                save(retVal, file='tmpR2D.RData')
+                                                do.call(bind_rows,
+                                                        lapply(retVal,
                                                                function(x) data.frame(x, stringsAsFactors = FALSE)))
                                         }
                                 }
