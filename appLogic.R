@@ -111,7 +111,6 @@ output$scheduler_tasks <- DT::renderDataTable({
 
 output$scheduler_logs <- DT::renderDataTable({
         data <- repoData('eu.ownyourdata.scheduler.log')
-        save(data, file='tmpLogs.RData')
         if(nrow(data) > 0) {
                 data$zeit <- as.POSIXct(data$timestamp, origin="1970-01-01")
                 data <- data[, c('zeit', 'text')]
