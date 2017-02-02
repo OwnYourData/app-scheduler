@@ -84,8 +84,8 @@ observeEvent(input$scheduler_active, {
 })
 
 renderSchedulerTasks <- function(data){
-        data <- data[, c('app', 'task', 'time')]
         if(nrow(data) > 0) {
+                data <- data[, c('app', 'task', 'time')]
                 colnames(data) <- c('App', 'Typ', 'Pattern')
                 DT::datatable(data,
                               selection = 'single',
@@ -96,8 +96,8 @@ renderSchedulerTasks <- function(data){
 }
 
 renderSchedulerApps <- function(data){
-        data <- data[, c('app'), drop=FALSE]
         if(nrow(data) > 0){
+                data <- data[, c('app'), drop=FALSE]
                 unique(data$app)
         } else {
                 data.frame()
