@@ -7,9 +7,6 @@ source('uiStatusDateSelect.R')
 appStatus <- function(){
         fluidRow(
                 column(12, 
-                       # uiOutput('desktopUiStatusItemsRender')
-                       uiStatusDateSelect(),
-                       bsAlert('dataStatus'),
                        tabsetPanel(
                                type='tabs',
                                tabPanel('periodische Aufgaben', br(),

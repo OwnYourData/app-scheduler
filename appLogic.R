@@ -1,7 +1,6 @@
 # application specific logic
 # last update: 2016-10-07
 
-source('srvDateselect.R', local=TRUE)
 source('srvEmail.R', local=TRUE)
 
 # any record manipulations before storing a record
@@ -30,9 +29,9 @@ observe({
                 url <- itemsUrl(app[['url']],
                                 schedulerStatusKey)
                 retVal <- readItems(app, url)
+                schedulerActiveStatus <- TRUE
                 if((nrow(retVal) > 1) | (nrow(retVal) == 0)){
                         deleteRepo(app, url)
-                        schedulerActiveStatus <- TRUE
                         item <- list(active         = schedulerActiveStatus,
                                      '_oydRepoName' = 'Scheduler Status')
                         writeItem(app, url, item)
@@ -105,7 +104,7 @@ renderSchedulerApps <- function(data){
 }
 
 output$scheduler_tasks <- DT::renderDataTable({
-        data <- currData()
+        data <- repoData('eu.ownyourdata.scheduler')
         renderSchedulerTasks(data)
 })
 
