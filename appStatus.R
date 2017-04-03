@@ -1,9 +1,6 @@
 # layout for section "Status"
 # last update: 2016-10-10
 
-source('uiStatusDateSelect.R')
-# source('uiStatusItemConfig.R')
-
 appStatus <- function(){
         fluidRow(
                 column(12, 
