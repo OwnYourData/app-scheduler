@@ -3,7 +3,7 @@
 
 # Comments ================================================
 # - run locally
-#   runApp('~/cs/ownyourdata/apps/scheduler', host='0.0.0.0', port=1238)
+#   runApp('~/oyd/scheduler', host='0.0.0.0', port=1238)
 # - copy files to Github
 #   cp -r *.R *.r *.txt www docker github/app-scheduler; cd github/app-scheduler;
 
