@@ -22,7 +22,7 @@ Diese Installation ist am einfachsten: Fordere deinen Datentresor an: https://ww
 
 ### Installation bei Cloud Diensten
 
-Verschiedene Cloud Dienste bieten das Hosting von [Docker](https://www.docker.com) Containern an, z.B. https://sloppy.io oder https://elastx.se. Die Scheduler-App steht als Docker-Image unter dem Namen `oydeu/app-scheduler` auf Dockerhub hier zur Verfügung: https://hub.docker.com/r/oydeu/app-Scheduler/.    
+Verschiedene Cloud Dienste bieten das Hosting von [Docker](https://www.docker.com) Containern an, z.B. https://sloppy.io oder https://elastx.se. Die Scheduler-App steht als Docker-Image unter dem Namen `oydeu/app-scheduler` auf Dockerhub hier zur Verfügung: https://hub.docker.com/r/oydeu/app-scheduler/.    
 Starte den Container und verbinde dich im Konfigurations-Dialog mit deinem Datentresor.
 
 ### Installation am eigenen Computer/Laptop
